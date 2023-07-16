@@ -1,0 +1,40 @@
+.header{
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: black;
+    -fx-font-size: 14pt;
+}
+
+.body{
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: black;
+    -fx-font-size: 12pt;
+}
+.ebody{
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: black;
+    -fx-font-size: 10pt;
+}
+
+.button{
+    -fx-background-color: #5fb4d2;
+    -fx-font-size: 12pt;
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #68c4e5;
+}
+.extra_button{
+    -fx-background-color: #bcbcbc;
+    -fx-font-size: 12pt;
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+}
+.extra_button:hover{
+    -fx-background-color: #adadad;
+}

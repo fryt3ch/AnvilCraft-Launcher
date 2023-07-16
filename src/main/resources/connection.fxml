@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXClippedPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="500.0" prefWidth="800.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frytech.AnvilCraft.ConnectionC">
+   <children>
+      <ImageView fx:id="background" fitHeight="500.0" fitWidth="800.0">
+         <image>
+            <Image url="@img/background_0_blur.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo" fitHeight="115.0" fitWidth="180.0" layoutX="170.0" layoutY="192.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <JFXClippedPane fx:id="rollupBtn" layoutX="740.0" prefHeight="30.0" prefWidth="30.0" styleClass="rollupbtn">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@img/rollup.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </JFXClippedPane>
+      <JFXClippedPane fx:id="exitBtn" layoutX="770.0" prefHeight="30.0" prefWidth="30.0" styleClass="exitbtn">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@img/close.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </JFXClippedPane>
+      <JFXClippedPane fx:id="border" prefHeight="30.0" prefWidth="740.0" />
+      <Line fx:id="line" layoutX="355.0" layoutY="295.0" opacity="0.5" startY="-100.0" stroke="WHITE" />
+      <Label fx:id="connectionText" layoutX="370.0" layoutY="230.0" prefHeight="35.0" prefWidth="261.0" styleClass="label-b" text="Соединяемся с сервером..." textFill="WHITE" />
+      <Label fx:id="copyrightText" layoutX="170.0" layoutY="460.0" prefHeight="25.0" prefWidth="215.0" styleClass="label-l" text="© AnvilCraft Project, 2019 г." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="versionText" fill="WHITE" layoutX="403.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-l" text="Launcher v.1.0-beta" textAlignment="RIGHT" wrappingWidth="227.13671875" />
+   </children>
+</AnchorPane>

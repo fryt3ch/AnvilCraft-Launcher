@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXClippedPane?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="500.0" prefWidth="800.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frytech.AnvilCraft.LoginC">
+   <children>
+      <ImageView fx:id="background" fitHeight="500.0" fitWidth="800.0">
+         <image>
+            <Image url="@img/background_0.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo" fitHeight="115.0" fitWidth="180.0" layoutX="310.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="loginField" focusColor="#5fb4d2" layoutX="267.5" layoutY="235.0" prefHeight="35.0" prefWidth="265.0" promptText="Логин/E-Mail" styleClass="field" unFocusColor="#a7a7a7">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passField" focusColor="#5fb4d2" layoutX="267.5" layoutY="290.0" prefHeight="35.0" prefWidth="265.0" promptText="Пароль" styleClass="field" unFocusColor="#a7a7a7">
+         <font>
+            <Font name="Segoe UI Light" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXPasswordField>
+      <JFXButton fx:id="loginBtn" layoutX="300.0" layoutY="390.0" prefHeight="32.0" prefWidth="200.0" styleClass="button" text="ВОЙТИ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label fx:id="welcomeText" layoutX="181.5" layoutY="145.0" styleClass="label-m" text="Добро пожаловать в официальный клиент нашего сервера!" />
+      <Label fx:id="loginText" layoutX="245.0" layoutY="190.0" styleClass="label-m" text="Войдите в ваш аккаунт чтобы продолжить:" />
+      <JFXCheckBox fx:id="rememberMe" checkedColor="#5fb4d2" layoutX="300.0" layoutY="350.0" prefHeight="24.0" prefWidth="200.0" text="Запомнить на компьютере" unCheckedColor="#a7a7a7">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <Label fx:id="forgotpassText" layoutX="267.5" layoutY="450.0" styleClass="help-label" text="Забыли пароль?">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="registrationText" layoutX="429.5" layoutY="450.0" styleClass="help-label" text="Создать аккаунт">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXClippedPane fx:id="rollupBtn" layoutX="740.0" prefHeight="30.0" prefWidth="30.0" styleClass="rollupbtn">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@img/rollup.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </JFXClippedPane>
+      <JFXClippedPane fx:id="exitBtn" layoutX="770.0" prefHeight="30.0" prefWidth="30.0" styleClass="exitbtn">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@img/close.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </JFXClippedPane>
+      <JFXClippedPane fx:id="border" prefHeight="30.0" prefWidth="740.0" />
+   </children>
+</AnchorPane>

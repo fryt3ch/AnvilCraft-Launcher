@@ -1,0 +1,72 @@
+.label-m{
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+    -fx-font-size: 12.5pt;
+}
+
+.label-b{
+    -fx-font-family: 'Segoe UI Semilight';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+    -fx-font-size: 16pt;
+}
+
+.label-l{
+    -fx-text-alignment: right;
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+
+.field{
+    -fx-font-family: "Segoe UI";
+    -fx-font-smoothing-type: lcd;
+    -fx-font-size: 13pt;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: #5fb4d2;
+    -fx-font-size: 13pt;
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #68c4e5;
+}
+
+.check-box {
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+    -fx-font-size: 11pt;
+}
+
+.help-label{
+    -fx-font-family: 'Segoe UI Light';
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: #68c4e5;
+    -fx-font-size: 11pt;
+    -fx-underline: true;
+}
+.help-label:hover{
+    -fx-text-fill: #57a1bc;
+}
+
+
+.rollupbtn:hover{
+    -fx-background-color: #a7a7a7;
+}
+.rollupbtn:pressed{
+    -fx-background-color: #919191;
+}
+.exitbtn:hover{
+    -fx-background-color: RED;
+}
+.exitbtn:pressed{
+    -fx-background-color: #b50404;
+}
